@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 // This class is responsible for handling encryption and decryption of secrets in the Vault application.
 @Service
 public class EncryptionService {
-    String key = "theogvaultproject"; // 16-char AES key
+    String key = "theogvaultprojec"; // 16-char AES key
     //making really easy....because i dont wanna go through the hassle of making a key generator(will do it later)
     //downsides of raw dogging the code.
     public String encrypt(String input) throws Exception {
