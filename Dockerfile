@@ -7,7 +7,7 @@ COPY pom.xml .
 RUN mvn dependency:go-offline
 
 # Now copy the rest of the source
-COPY src ./src
+COPY src vault/src
 
 # Build the JAR
 RUN mvn clean package -DskipTests
