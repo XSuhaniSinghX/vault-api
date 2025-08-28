@@ -8,7 +8,7 @@ pipeline{
     steps {
      script {
       echo 'Building Docker Image...'
-       sh 'docker build -t vault-api:latest .'
+       bat 'docker build -t vault-api:latest .'
      }
     }
    }
