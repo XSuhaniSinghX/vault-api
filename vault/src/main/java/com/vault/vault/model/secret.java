@@ -6,5 +6,5 @@ import java.time.LocalDateTime;
 public class secret {
     public String id; // its going to be name of the secret
     public String secretvalue; // this one gon' be encrypted
-    public LocalDateTime createdAt; // timestamp for when the secret was created
+    public String createdAt; // timestamp for when the secret was created
 }

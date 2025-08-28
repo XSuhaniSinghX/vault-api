@@ -61,7 +61,7 @@ public class vaultService {
             secret s = new secret();
             s.id = id;
             s.secretvalue = encrypt.encrypt(secretvalue); // encrypt before saving
-            s.createdAt = LocalDateTime.now();
+            s.createdAt = LocalDateTime.now().toString();
 
             // ✅ Ensure folder exists for this user
             new File(secretbase + use.username).mkdirs();
