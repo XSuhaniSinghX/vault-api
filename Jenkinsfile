@@ -7,9 +7,8 @@ pipeline{
    stage('Build docker image') {
     steps {
      script {
-      bat 'cd vault'
       echo 'Building Docker Image...'
-       bat 'docker build -t vault-api:latest .'
+       bat 'docker build -t vault-api:latest ./vault'
      }
     }
    }
