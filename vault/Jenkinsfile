@@ -1,0 +1,11 @@
+pipeline{
+ agent any
+  
+   stage('Build docker image') {
+    steps {
+     script {
+       sh 'docker build -t vault-api:latest .'
+     }
+    }
+   }
+ }
